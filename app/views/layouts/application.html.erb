@@ -6,16 +6,32 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <style>
+    body {
+      font-size: 16px;
+    }
+    .icon {
+        text-align: left;
+    }
+      
+    .icon .glyphicon {
+      font-size: 25px;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar">
-    <div class="container">
+    <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">Message Board</a>
+        <a class="navbar-brand" href="#">
+          <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+          Message Board
+        </a>
       </div>
     </div>
   </nav>
-  <div class="container">
+  <div class="container-fluid">
     <%= yield %>
   </div>
 </body>
