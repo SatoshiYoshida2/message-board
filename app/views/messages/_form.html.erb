@@ -13,14 +13,24 @@
   <% end %>
   <div class="form-group">
     <label for="inputName" class="col-sm-1 control-label">名前:</label>
-    <div class="col-sm-11">
-      <%= f.text_field :name ,class:"form-control" ,id:"inputName" ,placeholder:"名前"%>
+    <div class="col-sm-6">
+      <%= f.text_field :name ,class:"form-control" ,id:"inputName" ,placeholder:"名前（20文字以内）"%>
+    </div>
+    <div class="col-sm-5">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAge" class="col-sm-1 control-label">年齢:</label>
+    <div class="col-sm-3">
+      <%= f.text_field :age ,class:"form-control" ,id:"inputAge" ,placeholder:"年齢（半角数字0以上）"%>
+    </div>
+    <div class="col-sm-8">
     </div>
   </div>
   <div class="form-group">
     <label for="inputBody" class="col-sm-1 control-label">内容:</label>
     <div class="col-sm-11">
-      <%= f.text_area :body ,class:"form-control" ,id:"inputBody" ,placeholder:"メッセージ"%>
+      <%= f.text_area :body ,class:"form-control" ,id:"inputBody" ,placeholder:"メッセージ（2文字以上30文字以内）"%>
     </div>
   </div>
   <div class="form-group">
